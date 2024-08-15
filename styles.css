@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #63eb7c;
+    color: white;
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+    background-color: #cde683;
+}
+
+#content {
+    padding-top: 60px; /* Make space for the fixed navbar */
+}
+
+section {
+    padding: 20px;
+    height: 100vh; /* For demonstration, make each section full height */
+}
+
+section:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+section:nth-child(even) {
+    background-color: #e2e2e2;
+}
+
+/* Scroll effect */
+.navbar-scrolled {
+    background-color: #222;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
